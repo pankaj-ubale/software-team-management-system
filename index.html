@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Software Development Team Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Software Development Team Management System</h1>
+
+<div class="container">
+
+<h2>Add New Task</h2>
+
+<input type="text" id="taskName" placeholder="Enter Task">
+<input type="text" id="memberName" placeholder="Assign to">
+
+<select id="status">
+<option value="Pending">Pending</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+</select>
+
+<button onclick="addTask()">Add Task</button>
+
+<h2>Project Tasks</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Task</th>
+<th>Assigned To</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="taskTable"></tbody>
+
+</table>
+
+<h2>Project Progress</h2>
+
+<div class="progressBar">
+<div id="progress"></div>
+</div>
+
+<p id="progressText">0% Completed</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
